@@ -1,4 +1,3 @@
-
 import os
 import numpy as np
 import pandas as pd
@@ -243,7 +242,7 @@ if df.empty:
     st.stop()
 
 st.sidebar.header("Control Center")
-st.sidebar.success(f"✓ {len(df):,} records loaded")
+st.sidebar.success(f"Records loaded")
 
 counties = sorted(df["County"].dropna().unique().tolist())
 if not counties:
