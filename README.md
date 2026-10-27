@@ -15,7 +15,7 @@
 * **Filtering Missing Data:** Handled nulls with `df.dropna(subset=['Start_Lat', 'Start_Lng', 'Start_Time', 'End_Time', 'Street', 'County'])`.
 * **Transforming Data & Outlier Removal:** Filtered duration anomalies with `df["Duration_Mins"].between(0, 1440, inclusive="neither")` and normalized street name strings using `.str.strip().str.title()`.
 * **Categorical Extension Type:** Reduced memory overhead on repetitive high-cardinality text columns (`Street`, `County`, `State`) by converting them to `category` dtypes.
-* **Discretization & Mapping:** Normalized continuous incident densities to compute dynamic RGB color gradient arrays (`[r, g, b, 210]`) across low-, medium-, and high-risk hotspots.
+* **Discretization & Mapping:** Normalized continuous incident densities to compute dynamic RGB color gradient arrays (`[r, g, b, 210]`) across low, medium, and high-risk hotspots.
 
 ---
 
