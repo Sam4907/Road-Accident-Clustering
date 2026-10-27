@@ -28,7 +28,7 @@
 
 ### **UNIT – V: Plotting and Visualization**
 
-* **Interactive Charting:** Used Plotly Express (`plotly.express`) to render interactive temporal line charts, incident severity bar charts, and Ripley's $K$ function plots.
+* **Visualisation:** Used `matplotlib.pyplot` and `seaborn` to extract useful visualisations such as Accidents by Hour and Top 10 Streets by Incident Count.
 * **Geospatial Hotspot Mapping:** Integrated PyDeck (`pdk.Deck`, `pdk.ViewState`, `pdk.Layer("ScatterplotLayer")`) over custom Carto vector basemaps to dynamically scale pin radius and color gradients based on incident density.
 
 ---
@@ -36,6 +36,7 @@
 ### **Major Components Beyond the Core Syllabus**
 
 * **Spatial Point Pattern Analysis (Ripley’s $K$ & Besag’s $L$ Functions):**
+* * **Interactive Charting:** Used Plotly Express (`plotly.express`) to render interactive temporal line charts, incident severity bar charts, and Ripley's $K$ function plots.
 * Rather than standard distance metrics, the project evaluates spatial point processes against theoretical **Complete Spatial Randomness (CSR)** ($K_{\text{CSR}}(r) = \pi r^2$) across radius ranges from 0.1 to 2.0 miles.
 * Computed **Besag’s $L$-function** ($L(r) = \sqrt{\frac{K(r)}{\pi}} - r$) to detect whether accidents cluster significantly above random Poisson distributions.
 * Implemented **border/edge effect correction** using `np.minimum.reduce()` to eliminate bias at the boundaries of geographic regions.
