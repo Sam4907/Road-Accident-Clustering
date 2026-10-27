@@ -54,3 +54,5 @@
 * **Automated Data Pipeline & Dataset Retrieval:**
 * Integrated the `kagglehub` API to automate fetching the multi-gigabyte US Accidents dataset directly from Kaggle.
 * Executed headless environment bootstrapping via `subprocess.run([sys.executable, "-m", "pip", "install", ...])` within the notebook execution flow.
+
+Devs- Shrika reballi, Sameeha Yasmin , Sreeya Rao
