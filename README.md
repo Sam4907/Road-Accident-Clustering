@@ -1,4 +1,5 @@
 # Road Accident Intelligence
+#### County-level accident patterns, temporal trends and hotspot analysis.
 
 ### **UNIT – II: Getting Started with Pandas & File Formats**
 
